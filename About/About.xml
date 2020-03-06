@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Durable Clothes (Continued)</name>
+	<packageId>Mlie.DurableClothes</packageId>
+	<author>Mlie</author>
+	<url>https://github.com/emipa606/DurableClothes</url>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+            <displayName>Harmony</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+            <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+		<li>
+			<packageId>UnlimitedHugs.HugsLib</packageId>
+			<displayName>HugsLib</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+			<downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>UnlimitedHugs.HugsLib</li>
+	</loadAfter>
+	<description>Update of mpwoz mod for RimWorld 1.1
+https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
+
+Support-chat:
+https://discord.gg/SuhwVpM
+
+Non-steam version:
+https://github.com/emipa606/DurableClothes
+	
+--- Original Description ---
+    
+Requires HugsLib https://steamcommunity.com/sharedfiles/filedetails/?id=818773962 for patching c# methods.
+        
+This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item's HP to max whenever it runs.
+        
+Yes, this means that if a pawn equips damaged clothing it will get repaired the next day.        
+    </description>
+</ModMetaData>
