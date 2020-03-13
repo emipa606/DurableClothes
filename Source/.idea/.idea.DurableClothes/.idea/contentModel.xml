@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Assemblies" t="ExcludeRecursive" />
+    <e p="C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Source" t="IncludeRecursive">
+      <e p="DurableClothes.csproj" t="IncludeRecursive" />
+      <e p="DurableClothes.sln" t="IncludeFlat" />
+      <e p="DurableClothes_Mod.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\marti\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\marti\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_DurableClothes.-592135132.00" t="ExcludeRecursive" />
+  </component>
+</project>

@@ -1,8 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Source\bin\Release\DurableClothes.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Source\obj\Release\DurableClothes.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Source\obj\Release\DurableClothes.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Assemblies\DurableClothes.dll
-E:\Steam\steamapps\common\RimWorld\Mods\DurableClothes\1.1\Assemblies\DurableClothes.dll
-E:\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Source\obj\Release\DurableClothes.csprojAssemblyReference.cache
-E:\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Source\obj\Release\DurableClothes.csproj.CoreCompileInputs.cache
-E:\Steam\steamapps\common\RimWorld\Mods\DurableClothes\Source\obj\Release\DurableClothes.dll
