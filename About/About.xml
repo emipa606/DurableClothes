@@ -27,21 +27,28 @@
     <li>brrainz.harmony</li>
     <li>UnlimitedHugs.HugsLib</li>
   </loadAfter>
-  <description>Update of mpwoz mod for RimWorld 1.1
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of mpwoz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 
-Support-chat:
-https://invite.gg/mlie
+- Affects all items of type Apparel
 
-Non-steam version:
-https://github.com/emipa606/DurableClothes
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/DurableClothes][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
-    
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+
 Requires HugsLib https://steamcommunity.com/sharedfiles/filedetails/?id=818773962 for patching c# methods.
         
 This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item's HP to max whenever it runs.
         
-Yes, this means that if a pawn equips damaged clothing it will get repaired the next day.        
-    </description>
+There is a setting to disable autorepair, which will only stop degradation.
+
+NOTE: bullets hitting clothing will still cause it to take damage! It'll be repaired on the next "degradation tick" which randomly occurs about once per day.</description>
 </ModMetaData>
