@@ -50,16 +50,16 @@ namespace DurableClothes
             if ((bool)DurableClothes_Settings.toggleFullRepair) // Only do full repair if the setting is enabled
             {
                 ap.HitPoints = ap.MaxHitPoints;
-                Log.Message("Repair to full");
+                //Log.Message("Repair to full");
                 return false;
             }
             if (DurableClothes_Settings.wearPercent == 0)
             {
-                Log.Message("No deterioraton");
+                //Log.Message("No deterioraton");
                 return false;
             }
             var num = GenMath.RoundRandom(ap.def.apparel.wearPerDay * DurableClothes_Settings.wearPercent / 100);
-            Log.Message("Take damage "+ num);
+            //Log.Message("Take damage "+ num);
             if (num > 0)
             {
                 ap.TakeDamage(new DamageInfo(DamageDefOf.Deterioration, (float)num, 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
