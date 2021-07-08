@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Durable Clothes (Continued)</name>
   <packageId>Mlie.DurableClothes</packageId>
@@ -8,6 +8,7 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -47,11 +48,11 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 
 Requires HugsLib https://steamcommunity.com/sharedfiles/filedetails/?id=818773962 for patching c# methods.
         
-This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item's HP to max whenever it runs.
+This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item&apos;s HP to max whenever it runs.
         
 There is a setting to disable autorepair, which will only stop degradation.
 
-NOTE: bullets hitting clothing will still cause it to take damage! It'll be repaired on the next "degradation tick" which randomly occurs about once per day.
+NOTE: bullets hitting clothing will still cause it to take damage! It&apos;ll be repaired on the next &quot;degradation tick&quot; which randomly occurs about once per day.
 
 
 [img]https://i.imgur.com/Rs6T6cr.png[/img]
@@ -63,6 +64,6 @@ NOTE: bullets hitting clothing will still cause it to take damage! It'll be repa
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
+
 </description>
 </ModMetaData>
-
