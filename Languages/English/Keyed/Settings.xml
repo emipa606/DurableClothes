@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DC_FullRepairLabel>Full Repair</DC_FullRepairLabel>
+  <DC_FullRepairTooltip>When enabled, fully repairs all clothing instead of simply stopping degradation.</DC_FullRepairTooltip>
+  <DC_WearDamageLabel>Wear damage %</DC_WearDamageLabel>
+  <DC_WearDamageTooltip>Instead of no deterioration, you can change it to a percent of the original here.</DC_WearDamageTooltip>
+</LanguageData>
