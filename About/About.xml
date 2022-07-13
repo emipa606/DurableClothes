@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Durable Clothes (Continued)</name>
   <packageId>Mlie.DurableClothes</packageId>
@@ -28,34 +28,38 @@
     <li>brrainz.harmony</li>
     <li>UnlimitedHugs.HugsLib</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of mpwoz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 
 - Affects all items of type Apparel
 - Added setting for taking damage based on percent of the original
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
 	[tr]
 		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
 		[td][url=https://github.com/emipa606/DurableClothes][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
-	[/tr]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/h5VwTNL.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
 
 Requires HugsLib https://steamcommunity.com/sharedfiles/filedetails/?id=818773962 for patching c# methods.
         
-This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item&apos;s HP to max whenever it runs.
+This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item's HP to max whenever it runs.
         
 There is a setting to disable autorepair, which will only stop degradation.
 
-NOTE: bullets hitting clothing will still cause it to take damage! It&apos;ll be repaired on the next &quot;degradation tick&quot; which randomly occurs about once per day.
+NOTE: bullets hitting clothing will still cause it to take damage! It'll be repaired on the next "degradation tick" which randomly occurs about once per day.
 
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
@@ -64,6 +68,5 @@ NOTE: bullets hitting clothing will still cause it to take damage! It&apos;ll be
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [/list]
-
 </description>
 </ModMetaData>
