@@ -1,6 +1,6 @@
 # DurableClothes
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of mpwoz mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
@@ -8,31 +8,22 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 - Affects all items of type Apparel
 - Added setting for taking damage based on percent of the original
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/DurableClothes]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 Requires HugsLib https://steamcommunity.com/sharedfiles/filedetails/?id=818773962 for patching c# methods.
         
-This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item&apos;s HP to max whenever it runs.
+This mod will prevent any worn clothes from deteriorating on your pawns. It does this by hooking into the deterioration function and setting the item's HP to max whenever it runs.
         
 There is a setting to disable autorepair, which will only stop degradation.
 
-NOTE: bullets hitting clothing will still cause it to take damage! It&apos;ll be repaired on the next &quot;degradation tick&quot; which randomly occurs about once per day.
+NOTE: bullets hitting clothing will still cause it to take damage! It'll be repaired on the next "degradation tick" which randomly occurs about once per day.
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
