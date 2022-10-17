@@ -7,6 +7,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 
 - Affects all items of type Apparel
 - Added setting for taking damage based on percent of the original
+- Removed HugsLib dependency
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 

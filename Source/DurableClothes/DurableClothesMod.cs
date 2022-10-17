@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Mlie;
+using UnityEngine;
 using Verse;
 
 namespace DurableClothes;
@@ -10,6 +11,8 @@ internal class DurableClothesMod : Mod
     ///     The instance of the settings to be read by the mod
     /// </summary>
     public static DurableClothesMod instance;
+
+    private static string currentVersion;
 
     /// <summary>
     ///     The private settings
@@ -23,6 +26,8 @@ internal class DurableClothesMod : Mod
     public DurableClothesMod(ModContentPack content) : base(content)
     {
         instance = this;
+        currentVersion =
+            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.DurableClothes"));
     }
 
     /// <summary>
@@ -66,6 +71,14 @@ internal class DurableClothesMod : Mod
         listing_Standard.Label("DC_WearDamageLabel_new".Translate(), -1, "DC_WearDamageTooltip".Translate());
         Settings.WearPercent = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.WearPercent, 0, 1f,
             false, Settings.WearPercent.ToStringPercent());
+        if (currentVersion != null)
+        {
+            listing_Standard.Gap();
+            GUI.contentColor = Color.gray;
+            listing_Standard.Label("DC_CurrentModVersionLabel".Translate(currentVersion));
+            GUI.contentColor = Color.white;
+        }
+
         listing_Standard.End();
     }
 }

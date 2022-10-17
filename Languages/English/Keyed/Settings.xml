@@ -3,6 +3,7 @@
   <DC_FullRepairLabel>Full Repair</DC_FullRepairLabel>
   <DC_FullRepairTooltip>When enabled, fully repairs all clothing instead of simply stopping degradation.</DC_FullRepairTooltip>
   <DC_WearDamageLabel>Wear damage %</DC_WearDamageLabel>
+  <DC_CurrentModVersionLabel>Installed mod-version: {0}</DC_CurrentModVersionLabel>
   <DC_WearDamageLabel_new>Wear damage</DC_WearDamageLabel_new>
   <DC_WearDamageTooltip>Instead of no deterioration, you can change it to a percent of the original here.</DC_WearDamageTooltip>
 </LanguageData>
