@@ -38,3 +38,4 @@ NOTE: bullets hitting clothing will still cause it to take damage! It'll be repa
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2015395963]Last updated 2023-02-08

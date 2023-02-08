@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DC_FullRepairLabel>Full Repair</DC_FullRepairLabel>
+  <DC_IgnoreCategories>Ignore these categories</DC_IgnoreCategories>
+  <DC_IgnoreCategoriesTooltip>Selected categories will be ignored by the mod and will be affected as usual by the vanilla durability loss</DC_IgnoreCategoriesTooltip>
   <DC_FullRepairTooltip>When enabled, fully repairs all clothing instead of simply stopping degradation.</DC_FullRepairTooltip>
   <DC_WearDamageLabel>Wear damage %</DC_WearDamageLabel>
   <DC_CurrentModVersionLabel>Installed mod-version: {0}</DC_CurrentModVersionLabel>

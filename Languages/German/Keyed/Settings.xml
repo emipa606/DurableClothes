@@ -7,4 +7,6 @@
   <DC_CurrentModVersionLabel>Installierte Mod-Version: {0}</DC_CurrentModVersionLabel>
   <DC_WearDamageLabel_new>Abnutzungsschäden</DC_WearDamageLabel_new>
   <DC_WearDamageTooltip>Anstelle von "keine Verschlechterung" können Sie hier einen Prozentsatz des ursprünglichen Wertes angeben.</DC_WearDamageTooltip>
+  <DC_IgnoreCategories>Diese Kategorien werden ignoriert</DC_IgnoreCategories>
+  <DC_IgnoreCategoriesTooltip>Ausgewählte Kategorien werden von der Mod ignoriert und sind wie üblich vom Vanilla-Haltbarkeitsverlust betroffen</DC_IgnoreCategoriesTooltip>
 </LanguageData>

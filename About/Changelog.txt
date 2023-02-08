@@ -1,5 +1,9 @@
 # Changelog for DurableClothes
 
+1.4.2 - Added setting to exclude apparel categories from being affected by the mod.
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.4.1 - Mod updated for 1.4 and passed autotests.
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 

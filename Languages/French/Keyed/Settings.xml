@@ -7,4 +7,6 @@
   <DC_CurrentModVersionLabel>Version installée du module : {0}</DC_CurrentModVersionLabel>
   <DC_WearDamageLabel_new>Dommages dus à l'usure</DC_WearDamageLabel_new>
   <DC_WearDamageTooltip>Au lieu d'une détérioration nulle, vous pouvez la faire passer à un pourcentage de l'original ici.</DC_WearDamageTooltip>
+  <DC_IgnoreCategories>Ignorez ces catégories</DC_IgnoreCategories>
+  <DC_IgnoreCategoriesTooltip>Les catégories sélectionnées seront ignorées par le mod et seront affectées comme d'habitude par la perte de durabilité de la vanille.</DC_IgnoreCategoriesTooltip>
 </LanguageData>

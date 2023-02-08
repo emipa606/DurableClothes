@@ -1,4 +1,7 @@
-﻿using Mlie;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Mlie;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -37,9 +40,15 @@ internal class DurableClothesMod : Mod
     {
         get
         {
-            if (settings == null)
+            if (settings != null)
             {
-                settings = GetSettings<DurableClothesSettings>();
+                return settings;
+            }
+
+            settings = GetSettings<DurableClothesSettings>();
+            if (settings.IgnoredCategories == null)
+            {
+                settings.IgnoredCategories = new List<string>();
             }
 
             return settings;
@@ -69,8 +78,21 @@ internal class DurableClothesMod : Mod
         listing_Standard.CheckboxLabeled("DC_FullRepairLabel".Translate(), ref Settings.ToggleFullRepair,
             "DC_FullRepairTooltip".Translate());
         listing_Standard.Label("DC_WearDamageLabel_new".Translate(), -1, "DC_WearDamageTooltip".Translate());
-        Settings.WearPercent = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.WearPercent, 0, 1f,
+        Settings.WearPercent = Widgets.HorizontalSlider_NewTemp(listing_Standard.GetRect(20), Settings.WearPercent, 0,
+            1f,
             false, Settings.WearPercent.ToStringPercent());
+
+        listing_Standard.Gap();
+        listing_Standard.GapLine();
+        listing_Standard.Label("DC_IgnoreCategories".Translate(), -1f, "DC_IgnoreCategoriesTooltip".Translate());
+
+        var apparelCategories = ThingCategoryDefOf.Apparel.childCategories;
+
+        foreach (var thingCategoryDef in apparelCategories)
+        {
+            listChildCategories(thingCategoryDef, ref listing_Standard, 0, false, false);
+        }
+
         if (currentVersion != null)
         {
             listing_Standard.Gap();
@@ -80,5 +102,45 @@ internal class DurableClothesMod : Mod
         }
 
         listing_Standard.End();
+    }
+
+    private void listChildCategories(ThingCategoryDef categoryDef, ref Listing_Standard listing_Standard, int tab,
+        bool changeValue, bool changeTo)
+    {
+        var spacing = string.Join(" ", new string[tab * 4]);
+        if (changeValue)
+        {
+            switch (changeTo)
+            {
+                case true when !Settings.IgnoredCategories.Contains(categoryDef.defName):
+                    Settings.IgnoredCategories.Add(categoryDef.defName);
+                    break;
+                case false when Settings.IgnoredCategories.Contains(categoryDef.defName):
+                    Settings.IgnoredCategories.Remove(categoryDef.defName);
+                    break;
+            }
+        }
+
+        var isSelected = Settings.IgnoredCategories.Contains(categoryDef.defName);
+        var originalValue = isSelected;
+        listing_Standard.CheckboxLabeled($"{spacing}{categoryDef.LabelCap}", ref isSelected,
+            string.Join("\r\n", categoryDef.childThingDefs.OrderBy(def => def.label).Select(def => def.LabelCap)));
+        var changeChild = isSelected != originalValue || changeValue;
+        if (isSelected != originalValue)
+        {
+            if (isSelected)
+            {
+                Settings.IgnoredCategories.Add(categoryDef.defName);
+            }
+            else
+            {
+                Settings.IgnoredCategories.Remove(categoryDef.defName);
+            }
+        }
+
+        foreach (var categoryDefChildCategory in categoryDef.childCategories)
+        {
+            listChildCategories(categoryDefChildCategory, ref listing_Standard, tab + 1, changeChild, isSelected);
+        }
     }
 }

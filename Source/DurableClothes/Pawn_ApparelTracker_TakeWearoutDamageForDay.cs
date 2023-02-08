@@ -9,6 +9,11 @@ public static class Pawn_ApparelTracker_TakeWearoutDamageForDay
 {
     public static bool Prefix(ref Thing ap, Pawn_ApparelTracker __instance)
     {
+        if (DurableClothesMod.instance.Settings.IgnoredCategories.Contains(ap.def.FirstThingCategory.defName))
+        {
+            return true;
+        }
+
         if (DurableClothesMod.instance.Settings.ToggleFullRepair) // Only do full repair if the setting is enabled
         {
             ap.HitPoints = ap.MaxHitPoints;

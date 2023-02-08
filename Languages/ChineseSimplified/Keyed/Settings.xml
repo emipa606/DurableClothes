@@ -7,4 +7,6 @@
   <DC_CurrentModVersionLabel>已安装的mod-version。{0}</DC_CurrentModVersionLabel>
   <DC_WearDamageLabel_new>磨损损坏</DC_WearDamageLabel_new>
   <DC_WearDamageTooltip>而不是不变质，你可以在这里把它改成原来的百分比。</DC_WearDamageTooltip>
+  <DC_IgnoreCategories>忽略这些类别</DC_IgnoreCategories>
+  <DC_IgnoreCategoriesTooltip>选定的类别将被mod忽略，并将像往常一样受到vanilla耐久性损失的影响。</DC_IgnoreCategoriesTooltip>
 </LanguageData>

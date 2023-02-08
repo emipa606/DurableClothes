@@ -7,4 +7,6 @@
   <DC_CurrentModVersionLabel>Установленная версия мода: {0}</DC_CurrentModVersionLabel>
   <DC_WearDamageLabel_new>Изношенные повреждения</DC_WearDamageLabel_new>
   <DC_WearDamageTooltip>Вместо отсутствия ухудшения вы можете изменить его на процент от исходного.</DC_WearDamageTooltip>
+  <DC_IgnoreCategories>Игнорируйте эти категории</DC_IgnoreCategories>
+  <DC_IgnoreCategoriesTooltip>Выбранные категории будут проигнорированы модом и, как обычно, будут затронуты ванильной потерей прочности.</DC_IgnoreCategoriesTooltip>
 </LanguageData>
