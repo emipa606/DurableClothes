@@ -8,6 +8,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 - Affects all items of type Apparel
 - Added setting for taking damage based on percent of the original
 - Removed HugsLib dependency
+- Added setting to exclude apparel categories
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
@@ -36,6 +37,4 @@ NOTE: bullets hitting clothing will still cause it to take damage! It'll be repa
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2015395963]Last updated 2023-02-08
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2015395963]Last updated 2023-02-09

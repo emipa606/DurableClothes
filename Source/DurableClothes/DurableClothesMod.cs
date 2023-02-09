@@ -17,6 +17,8 @@ internal class DurableClothesMod : Mod
 
     private static string currentVersion;
 
+    private static Vector2 scrollPosition;
+
     /// <summary>
     ///     The private settings
     /// </summary>
@@ -82,17 +84,6 @@ internal class DurableClothesMod : Mod
             1f,
             false, Settings.WearPercent.ToStringPercent());
 
-        listing_Standard.Gap();
-        listing_Standard.GapLine();
-        listing_Standard.Label("DC_IgnoreCategories".Translate(), -1f, "DC_IgnoreCategoriesTooltip".Translate());
-
-        var apparelCategories = ThingCategoryDefOf.Apparel.childCategories;
-
-        foreach (var thingCategoryDef in apparelCategories)
-        {
-            listChildCategories(thingCategoryDef, ref listing_Standard, 0, false, false);
-        }
-
         if (currentVersion != null)
         {
             listing_Standard.Gap();
@@ -101,7 +92,30 @@ internal class DurableClothesMod : Mod
             GUI.contentColor = Color.white;
         }
 
+        listing_Standard.Gap();
+        listing_Standard.GapLine();
+        listing_Standard.Label("DC_IgnoreCategories".Translate(), -1f, "DC_IgnoreCategoriesTooltip".Translate());
+        var apparelCategories = ThingCategoryDefOf.Apparel.childCategories;
+        var scrollRect = rect;
+        scrollRect.y += listing_Standard.CurHeight;
+        scrollRect.height -= listing_Standard.CurHeight;
+        var viewRect = scrollRect;
+        viewRect.position = Vector2.zero;
+        viewRect.height = 15 + (25 * ThingCategoryDefOf.Apparel.ThisAndChildCategoryDefs.Count());
+        viewRect.width *= 0.95f;
         listing_Standard.End();
+
+        Widgets.BeginScrollView(scrollRect, ref scrollPosition, viewRect);
+
+        listing_Standard.Begin(viewRect);
+        foreach (var thingCategoryDef in apparelCategories)
+        {
+            listChildCategories(thingCategoryDef, ref listing_Standard, 0, false, false);
+        }
+
+
+        listing_Standard.End();
+        Widgets.EndScrollView();
     }
 
     private void listChildCategories(ThingCategoryDef categoryDef, ref Listing_Standard listing_Standard, int tab,
