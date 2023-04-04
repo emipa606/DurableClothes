@@ -1,5 +1,8 @@
 # Changelog for DurableClothes
 
+1.4.4 - No longer causes errors when wearing apparel with no hitpoints or category set (warcaskets)
+
+
 1.4.3 - Added scroll to the category-selection
 
 

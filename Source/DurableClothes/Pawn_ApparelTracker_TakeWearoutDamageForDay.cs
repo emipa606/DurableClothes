@@ -9,7 +9,17 @@ public static class Pawn_ApparelTracker_TakeWearoutDamageForDay
 {
     public static bool Prefix(ref Thing ap, Pawn_ApparelTracker __instance)
     {
-        if (DurableClothesMod.instance.Settings.IgnoredCategories.Contains(ap.def.FirstThingCategory.defName))
+        if (ap == null)
+        {
+            return true;
+        }
+
+        if (DurableClothesMod.instance.Settings.IgnoredCategories.Contains(ap.def.FirstThingCategory?.defName))
+        {
+            return true;
+        }
+
+        if (!ap.def.useHitPoints)
         {
             return true;
         }

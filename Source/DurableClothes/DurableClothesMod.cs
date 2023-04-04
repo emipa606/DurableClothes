@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using Mlie;
 using RimWorld;
 using UnityEngine;
@@ -22,7 +21,7 @@ internal class DurableClothesMod : Mod
     /// <summary>
     ///     The private settings
     /// </summary>
-    private DurableClothesSettings settings;
+    public readonly DurableClothesSettings Settings;
 
     /// <summary>
     ///     Constructor
@@ -32,30 +31,8 @@ internal class DurableClothesMod : Mod
     {
         instance = this;
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.DurableClothes"));
-    }
-
-    /// <summary>
-    ///     The instance-settings for the mod
-    /// </summary>
-    internal DurableClothesSettings Settings
-    {
-        get
-        {
-            if (settings != null)
-            {
-                return settings;
-            }
-
-            settings = GetSettings<DurableClothesSettings>();
-            if (settings.IgnoredCategories == null)
-            {
-                settings.IgnoredCategories = new List<string>();
-            }
-
-            return settings;
-        }
-        set => settings = value;
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
+        Settings = GetSettings<DurableClothesSettings>();
     }
 
     /// <summary>
