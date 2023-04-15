@@ -1,5 +1,8 @@
 # Changelog for DurableClothes
 
+1.4.5 - Added some extra nullchecks in lack of any provided logs of reported issues
+
+
 1.4.4 - No longer causes errors when wearing apparel with no hitpoints or category set (warcaskets)
 
 
