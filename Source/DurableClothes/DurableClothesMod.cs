@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Mlie;
 using RimWorld;
 using UnityEngine;
@@ -60,6 +61,12 @@ internal class DurableClothesMod : Mod
         Settings.WearPercent = Widgets.HorizontalSlider_NewTemp(listing_Standard.GetRect(20), Settings.WearPercent, 0,
             1f,
             false, Settings.WearPercent.ToStringPercent());
+
+        listing_Standard.Gap();
+        Settings.OnlyAboveQuality = (int)Math.Round(listing_Standard.SliderLabeled(
+            "DC_OnlyAboveQuality".Translate(((QualityCategory)Settings.OnlyAboveQuality).ToString()),
+            Settings.OnlyAboveQuality, 0f, Enum.GetNames(typeof(QualityCategory)).Length - 1, 0.5f,
+            "DC_OnlyAboveQualityTT".Translate()));
 
         if (currentVersion != null)
         {

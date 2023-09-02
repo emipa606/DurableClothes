@@ -9,4 +9,6 @@
   <DC_WearDamageTooltip>Au lieu d'une détérioration nulle, vous pouvez la faire passer à un pourcentage de l'original ici.</DC_WearDamageTooltip>
   <DC_IgnoreCategories>Ignorez ces catégories</DC_IgnoreCategories>
   <DC_IgnoreCategoriesTooltip>Les catégories sélectionnées seront ignorées par le mod et seront affectées comme d'habitude par la perte de durabilité de la vanille.</DC_IgnoreCategoriesTooltip>
+  <DC_OnlyAboveQuality>Uniquement les appareils de réparation automatique de qualité {0} ou supérieure</DC_OnlyAboveQuality>
+  <DC_OnlyAboveQualityTT>Les vêtements dont le niveau de qualité est inférieur à la qualité sélectionnée se détérioreront normalement.</DC_OnlyAboveQualityTT>
 </LanguageData>

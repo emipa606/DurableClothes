@@ -9,4 +9,6 @@
   <DC_WearDamageTooltip>Anstelle von "keine Verschlechterung" können Sie hier einen Prozentsatz des ursprünglichen Wertes angeben.</DC_WearDamageTooltip>
   <DC_IgnoreCategories>Diese Kategorien werden ignoriert</DC_IgnoreCategories>
   <DC_IgnoreCategoriesTooltip>Ausgewählte Kategorien werden von der Mod ignoriert und sind wie üblich vom Vanilla-Haltbarkeitsverlust betroffen</DC_IgnoreCategoriesTooltip>
+  <DC_OnlyAboveQuality>Nur Autoreparatur-Bekleidung der Qualität {0} oder höher</DC_OnlyAboveQuality>
+  <DC_OnlyAboveQualityTT>Kleidungsstücke mit einer Qualitätsstufe unterhalb der gewählten Qualität werden wie üblich verschlechtert</DC_OnlyAboveQualityTT>
 </LanguageData>

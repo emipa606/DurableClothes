@@ -9,4 +9,6 @@
   <DC_WearDamageTooltip>而不是不变质，你可以在这里把它改成原来的百分比。</DC_WearDamageTooltip>
   <DC_IgnoreCategories>忽略这些类别</DC_IgnoreCategories>
   <DC_IgnoreCategoriesTooltip>选定的类别将被mod忽略，并将像往常一样受到vanilla耐久性损失的影响。</DC_IgnoreCategoriesTooltip>
+  <DC_OnlyAboveQuality>只有质量为{0}或更高的自动修复服装</DC_OnlyAboveQuality>
+  <DC_OnlyAboveQualityTT>质量等级低于所选质量等级的服装会正常变质</DC_OnlyAboveQualityTT>
 </LanguageData>
