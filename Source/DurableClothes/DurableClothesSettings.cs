@@ -8,7 +8,7 @@ namespace DurableClothes;
 /// </summary>
 internal class DurableClothesSettings : ModSettings
 {
-    public List<string> IgnoredCategories = new List<string>();
+    public List<string> IgnoredCategories = [];
     public int OnlyAboveQuality;
     public bool ToggleFullRepair;
     public float WearPercent = 0.05f;

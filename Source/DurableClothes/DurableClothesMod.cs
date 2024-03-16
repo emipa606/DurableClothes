@@ -58,7 +58,7 @@ internal class DurableClothesMod : Mod
         listing_Standard.CheckboxLabeled("DC_FullRepairLabel".Translate(), ref Settings.ToggleFullRepair,
             "DC_FullRepairTooltip".Translate());
         listing_Standard.Label("DC_WearDamageLabel_new".Translate(), -1, "DC_WearDamageTooltip".Translate());
-        Settings.WearPercent = Widgets.HorizontalSlider_NewTemp(listing_Standard.GetRect(20), Settings.WearPercent, 0,
+        Settings.WearPercent = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.WearPercent, 0,
             1f,
             false, Settings.WearPercent.ToStringPercent());
 
