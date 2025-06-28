@@ -13,7 +13,7 @@ internal class DurableClothesMod : Mod
     /// <summary>
     ///     The instance of the settings to be read by the mod
     /// </summary>
-    public static DurableClothesMod instance;
+    public static DurableClothesMod Instance;
 
     private static string currentVersion;
 
@@ -30,7 +30,7 @@ internal class DurableClothesMod : Mod
     /// <param name="content"></param>
     public DurableClothesMod(ModContentPack content) : base(content)
     {
-        instance = this;
+        Instance = this;
         currentVersion =
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
         Settings = GetSettings<DurableClothesSettings>();
@@ -52,53 +52,53 @@ internal class DurableClothesMod : Mod
     /// <param name="rect"></param>
     public override void DoSettingsWindowContents(Rect rect)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
-        listing_Standard.Gap();
-        listing_Standard.CheckboxLabeled("DC_FullRepairLabel".Translate(), ref Settings.ToggleFullRepair,
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(rect);
+        listingStandard.Gap();
+        listingStandard.CheckboxLabeled("DC_FullRepairLabel".Translate(), ref Settings.ToggleFullRepair,
             "DC_FullRepairTooltip".Translate());
-        listing_Standard.Label("DC_WearDamageLabel_new".Translate(), -1, "DC_WearDamageTooltip".Translate());
-        Settings.WearPercent = Widgets.HorizontalSlider(listing_Standard.GetRect(20), Settings.WearPercent, 0,
+        listingStandard.Label("DC_WearDamageLabel_new".Translate(), -1, "DC_WearDamageTooltip".Translate());
+        Settings.WearPercent = Widgets.HorizontalSlider(listingStandard.GetRect(20), Settings.WearPercent, 0,
             1f,
             false, Settings.WearPercent.ToStringPercent());
 
-        listing_Standard.Gap();
-        Settings.OnlyAboveQuality = (int)Math.Round(listing_Standard.SliderLabeled(
+        listingStandard.Gap();
+        Settings.OnlyAboveQuality = (int)Math.Round(listingStandard.SliderLabeled(
             "DC_OnlyAboveQuality".Translate(((QualityCategory)Settings.OnlyAboveQuality).ToString()),
             Settings.OnlyAboveQuality, 0f, Enum.GetNames(typeof(QualityCategory)).Length - 1, 0.5f,
             "DC_OnlyAboveQualityTT".Translate()));
 
         if (currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("DC_CurrentModVersionLabel".Translate(currentVersion));
+            listingStandard.Label("DC_CurrentModVersionLabel".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.Gap();
-        listing_Standard.GapLine();
-        listing_Standard.Label("DC_IgnoreCategories".Translate(), -1f, "DC_IgnoreCategoriesTooltip".Translate());
+        listingStandard.Gap();
+        listingStandard.GapLine();
+        listingStandard.Label("DC_IgnoreCategories".Translate(), -1f, "DC_IgnoreCategoriesTooltip".Translate());
         var apparelCategories = ThingCategoryDefOf.Apparel.childCategories;
         var scrollRect = rect;
-        scrollRect.y += listing_Standard.CurHeight;
-        scrollRect.height -= listing_Standard.CurHeight;
+        scrollRect.y += listingStandard.CurHeight;
+        scrollRect.height -= listingStandard.CurHeight;
         var viewRect = scrollRect;
         viewRect.position = Vector2.zero;
         viewRect.height = 15 + (25 * ThingCategoryDefOf.Apparel.ThisAndChildCategoryDefs.Count());
         viewRect.width *= 0.95f;
-        listing_Standard.End();
+        listingStandard.End();
 
         Widgets.BeginScrollView(scrollRect, ref scrollPosition, viewRect);
 
-        listing_Standard.Begin(viewRect);
+        listingStandard.Begin(viewRect);
         foreach (var thingCategoryDef in apparelCategories)
         {
-            listChildCategories(thingCategoryDef, ref listing_Standard, 0, false, false);
+            listChildCategories(thingCategoryDef, ref listingStandard, 0, false, false);
         }
 
 
-        listing_Standard.End();
+        listingStandard.End();
         Widgets.EndScrollView();
     }
 

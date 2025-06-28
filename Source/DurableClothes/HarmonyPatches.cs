@@ -32,12 +32,12 @@ public class HarmonyPatches
         {
             if (modSetting.Name == "wearPercent")
             {
-                DurableClothesMod.instance.Settings.WearPercent = int.Parse(modSetting.Value) / 100f;
+                DurableClothesMod.Instance.Settings.WearPercent = int.Parse(modSetting.Value) / 100f;
             }
 
             if (modSetting.Name == "toggleFullRepair")
             {
-                DurableClothesMod.instance.Settings.ToggleFullRepair = bool.Parse(modSetting.Value);
+                DurableClothesMod.Instance.Settings.ToggleFullRepair = bool.Parse(modSetting.Value);
             }
         }
 

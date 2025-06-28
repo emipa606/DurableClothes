@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <DC_OnlyAboveQuality>Only autorepair apparel of quality {0} or higher</DC_OnlyAboveQuality>
   <DC_OnlyAboveQualityTT>Apparel with a quality-level below the selected quality will deteriorate as normal</DC_OnlyAboveQualityTT>

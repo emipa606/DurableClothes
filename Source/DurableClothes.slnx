@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Release" />
+  </Configurations>
+  <Project Path="DurableClothes/DurableClothes.csproj">
+    <BuildType Project="Release" />
+  </Project>
+</Solution>
