@@ -3,7 +3,13 @@
   "CanAdd": "0",
   "CanRemove": "0",
   "PreviewVersion": "1.6",
-  "LastXmlCleaning": "2025-06-28T22:34:31.2342465+02:00",
+  "LastXmlCleaning": "2025-09-04T13:00:06.7172895+02:00",
   "SocialImageSet": true,
-  "SearchTags": " wear and tear"
+  "SearchTags": " wear and tear",
+  "Patches": false,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 10134,
+  "LinesOfXML": 0,
+  "CodeBaseSize": 63
 }

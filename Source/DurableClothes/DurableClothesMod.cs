@@ -52,6 +52,8 @@ internal class DurableClothesMod : Mod
     /// <param name="rect"></param>
     public override void DoSettingsWindowContents(Rect rect)
     {
+        Settings.IgnoredCategories ??= [];
+
         var listingStandard = new Listing_Standard();
         listingStandard.Begin(rect);
         listingStandard.Gap();
