@@ -11,4 +11,6 @@
   <DC_IgnoreCategoriesTooltip>Ausgewählte Kategorien werden von der Mod ignoriert und sind wie üblich vom Vanilla-Haltbarkeitsverlust betroffen</DC_IgnoreCategoriesTooltip>
   <DC_OnlyAboveQuality>Nur Autoreparatur-Bekleidung der Qualität {0} oder höher</DC_OnlyAboveQuality>
   <DC_OnlyAboveQualityTT>Kleidungsstücke mit einer Qualitätsstufe unterhalb der gewählten Qualität werden wie üblich verschlechtert</DC_OnlyAboveQualityTT>
+  <DC_AffectApparelWithoutQualityLabel>Beeinflussen Sie Kleidung ohne Qualität</DC_AffectApparelWithoutQualityLabel>
+  <DC_AffectApparelWithoutQualityTooltip>Wenn aktiviert, ist Kleidung ohne Qualitätsstufe auch von dieser Mod betroffen.</DC_AffectApparelWithoutQualityTooltip>
 </LanguageData>

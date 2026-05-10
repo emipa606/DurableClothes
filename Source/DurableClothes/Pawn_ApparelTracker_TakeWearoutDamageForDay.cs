@@ -28,7 +28,7 @@ public static class Pawn_ApparelTracker_TakeWearoutDamageForDay
         {
             if (!ap.TryGetQuality(out var quality))
             {
-                return true;
+                return !DurableClothesMod.Instance.Settings.AffectApparelWithoutQuality;
             }
 
             if (quality < (QualityCategory)DurableClothesMod.Instance.Settings.OnlyAboveQuality)

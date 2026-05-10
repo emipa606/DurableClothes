@@ -2,6 +2,8 @@
 <LanguageData>
   <DC_OnlyAboveQuality>Only autorepair apparel of quality {0} or higher</DC_OnlyAboveQuality>
   <DC_OnlyAboveQualityTT>Apparel with a quality-level below the selected quality will deteriorate as normal</DC_OnlyAboveQualityTT>
+  <DC_AffectApparelWithoutQualityLabel>Affect apparel without quality</DC_AffectApparelWithoutQualityLabel>
+  <DC_AffectApparelWithoutQualityTooltip>When enabled, apparel without a quality level is also affected by this mod.</DC_AffectApparelWithoutQualityTooltip>
   <DC_FullRepairLabel>Full Repair</DC_FullRepairLabel>
   <DC_IgnoreCategories>Ignore these categories</DC_IgnoreCategories>
   <DC_IgnoreCategoriesTooltip>Selected categories will be ignored by the mod and will be affected as usual by the vanilla durability loss</DC_IgnoreCategoriesTooltip>

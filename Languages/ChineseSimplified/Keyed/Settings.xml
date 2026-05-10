@@ -11,4 +11,6 @@
   <DC_IgnoreCategoriesTooltip>选定的类别将被mod忽略，并将像往常一样受到vanilla耐久性损失的影响。</DC_IgnoreCategoriesTooltip>
   <DC_OnlyAboveQuality>只有质量为{0}或更高的自动修复服装</DC_OnlyAboveQuality>
   <DC_OnlyAboveQualityTT>质量等级低于所选质量等级的服装会正常变质</DC_OnlyAboveQualityTT>
+  <DC_AffectApparelWithoutQualityLabel>影响服装质量</DC_AffectApparelWithoutQualityLabel>
+  <DC_AffectApparelWithoutQualityTooltip>启用后，没有质量等级的服装也会受到此修改器的影响。</DC_AffectApparelWithoutQualityTooltip>
 </LanguageData>

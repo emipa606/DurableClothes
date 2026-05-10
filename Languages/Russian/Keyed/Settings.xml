@@ -11,4 +11,6 @@
   <DC_IgnoreCategoriesTooltip>Выбранные категории будут проигнорированы модом и, как обычно, будут затронуты ванильной потерей прочности.</DC_IgnoreCategoriesTooltip>
   <DC_OnlyAboveQuality>Только авторемонтная одежда качества {0} или выше</DC_OnlyAboveQuality>
   <DC_OnlyAboveQualityTT>Приборы с уровнем качества ниже выбранного ухудшаются в обычном режиме</DC_OnlyAboveQualityTT>
+  <DC_AffectApparelWithoutQualityLabel>Повлиять на одежду без качества</DC_AffectApparelWithoutQualityLabel>
+  <DC_AffectApparelWithoutQualityTooltip>Когда этот мод включен, одежда без уровня качества также подвержена его влиянию.</DC_AffectApparelWithoutQualityTooltip>
 </LanguageData>

@@ -8,6 +8,7 @@ namespace DurableClothes;
 /// </summary>
 internal class DurableClothesSettings : ModSettings
 {
+    public bool AffectApparelWithoutQuality = true;
     public List<string> IgnoredCategories = [];
     public int OnlyAboveQuality;
     public bool ToggleFullRepair;
@@ -19,6 +20,7 @@ internal class DurableClothesSettings : ModSettings
     public override void ExposeData()
     {
         base.ExposeData();
+        Scribe_Values.Look(ref AffectApparelWithoutQuality, "AffectApparelWithoutQuality", true);
         Scribe_Values.Look(ref OnlyAboveQuality, "OnlyAboveQuality");
         Scribe_Values.Look(ref ToggleFullRepair, "ToggleFullRepair");
         Scribe_Values.Look(ref WearPercent, "WearPercent", 0.05f);

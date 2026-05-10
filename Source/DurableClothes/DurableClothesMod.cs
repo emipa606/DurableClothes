@@ -69,6 +69,9 @@ internal class DurableClothesMod : Mod
             "DC_OnlyAboveQuality".Translate(((QualityCategory)Settings.OnlyAboveQuality).ToString()),
             Settings.OnlyAboveQuality, 0f, Enum.GetNames(typeof(QualityCategory)).Length - 1, 0.5f,
             "DC_OnlyAboveQualityTT".Translate()));
+        listingStandard.CheckboxLabeled("DC_AffectApparelWithoutQualityLabel".Translate(),
+            ref Settings.AffectApparelWithoutQuality,
+            "DC_AffectApparelWithoutQualityTooltip".Translate());
 
         if (currentVersion != null)
         {
