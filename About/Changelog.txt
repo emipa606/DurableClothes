@@ -1,5 +1,8 @@
 # Changelog for DurableClothes
 
+1.6.3 - Fixed wrong author name
+
+
 1.6.2 - Added mod-setting to affect apparel without quality as well
 Used DeepL to update translations for ChineseSimplified, French, German, Russian
 

@@ -10,6 +10,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 - Removed HugsLib dependency
 - Added setting to exclude apparel categories
 - Added setting to exclude apparel based on quality
+- Added setting to include all apparel without quality
 
 ![Image](https://img.litet.net/logos/Notice.png)
 	
@@ -38,4 +39,4 @@ NOTE: bullets hitting clothing will still cause it to take damage! It'll be repa
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/DurableClothes?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2015395963) | tags: wear and tear
+[![Image](https://img.shields.io/github/v/release/emipa606/DurableClothes?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2015395963) | tags: no deterioration

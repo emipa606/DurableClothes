@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Durable Clothes (Continued)</name>
   <packageId>Mlie.DurableClothes</packageId>
-  <author>Mlie</author>
+  <author>mpwoz</author>
   <url>https://github.com/emipa606/DurableClothes</url>
   <supportedVersions>
     <li>1.0</li>
@@ -33,6 +33,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1483544020
 - Removed HugsLib dependency
 - Added setting to exclude apparel categories
 - Added setting to exclude apparel based on quality
+- Added setting to include all apparel without quality
 
 [img]https://img.litet.net/logos/Notice.png[/img]
 
@@ -69,6 +70,6 @@ NOTE: bullets hitting clothing will still cause it to take damage! It'll be repa
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
 [/list] 
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2015395963][img]https://img.shields.io/github/v/release/emipa606/DurableClothes?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: wear and tear</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.6.2</modVersion>
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2015395963][img]https://img.shields.io/github/v/release/emipa606/DurableClothes?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags: no deterioration</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.3</modVersion>
 </ModMetaData>
